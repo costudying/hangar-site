@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/home/bruno/Desktop/hangar/tessellate/images/logo.svg"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-filename="/home/bruno/Desktop/hangar-logo.png"
+   inkscape:export-xdpi="189.80981"
+   inkscape:export-ydpi="189.80981">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -51,8 +51,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="230.51349"
-     inkscape:cy="183.07136"
+     inkscape:cx="202.22922"
+     inkscape:cy="142.66526"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -70,7 +70,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,7 +81,7 @@
      transform="translate(0,-752.3623)">
     <g
        id="g8768"
-       transform="matrix(0.73394594,0,0,0.73394594,77.109555,486.81141)"
+       transform="matrix(0.73394594,0,0,0.73394594,57.109555,486.81141)"
        style="fill:#f2f2f2">
       <path
          inkscape:export-ydpi="83.628311"
