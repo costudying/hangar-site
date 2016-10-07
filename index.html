@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/5.2.0/sweetalert2.min.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -374,6 +375,7 @@
 		</section>
 
 		<!-- Scripts -->
+		<script src="https://cdn.jsdelivr.net/sweetalert2/5.2.0/sweetalert2.min.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
@@ -381,8 +383,19 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
 		<script type="text/javascript">
-			$("form").on("submit", function () {
-
+			$("form").on("submit", function (evt) {
+				evt.preventDefault();
+				$.ajax({
+					type: "POST",
+					url: "http://hangar-email.herokuapp.com",
+					data: $(evt.target).serialize(),
+					success: function(){
+						swal("Sucesso!","Sua mensagem foi enviada com sucesso.","success");
+					},
+					error: function(){
+						swal("Erro!","Houve um erro ao enviar sua mensagem. Tente novamente mais tarde","error");
+					}
+				});
 			});
 		</script>
 	</body>
