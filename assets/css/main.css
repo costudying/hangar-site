@@ -1385,7 +1385,7 @@
 		transition: border-bottom-color 0.25s ease-in-out;
 		color: inherit;
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
+
 	}
 
 		a:hover {
@@ -2329,13 +2329,12 @@
 
 /* Circle */
 	.circle {
-		background: rgba(255, 255, 255, 0.1);
+		background: rgba(255, 255, 255, 0.2);
 		width: 2em;
 		height: 2em;
 		font-size: 4.5em;
 		border-radius: 100%;
 		color: #666;
-		line-height: 2.1em; 
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+		line-height: 2.1em; 	
 		color: #fff;
 	}
